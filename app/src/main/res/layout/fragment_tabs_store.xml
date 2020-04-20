@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/nested_scroll_view" android:scrollbars="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:scrollingCache="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/spacing_large" android:paddingRight="@dimen/spacing_large" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_large">
+            <TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Title" android:layout_width="0dp" android:layout_height="wrap_content" android:text="New Releases" android:layout_weight="1"/>
+            <Button android:textColor="@color/grey_60" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="0dp" android:text="MORE" style="@style/Widget.AppCompat.Button.Borderless"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:padding="@dimen/spacing_medium" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_medium" android:layout_weight="1" app:cardCornerRadius="2dp" app:cardElevation="2dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/image_1" android:background="@color/grey_40" android:layout_width="match_parent" android:layout_height="180dp" android:scaleType="centerCrop"/>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="@dimen/spacing_large" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                            <TextView android:textAppearance="@style/TextAppearance.Medium.Bold" android:textColor="@color/grey_90" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Mauris sagittis non elit" android:maxLines="1" android:singleLine="true"/>
+                            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Kodaline"/>
+                        </LinearLayout>
+                        <ImageButton android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/grey_40" app:srcCompat="@drawable/ic_more_vert"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_medium" android:layout_weight="1" app:cardCornerRadius="2dp" app:cardElevation="2dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/image_2" android:background="@color/grey_40" android:layout_width="match_parent" android:layout_height="180dp" android:scaleType="centerCrop"/>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="@dimen/spacing_large" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                            <TextView android:textAppearance="@style/TextAppearance.Medium.Bold" android:textColor="@color/grey_90" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Aliquam" android:maxLines="1" android:singleLine="true"/>
+                            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="One Republic"/>
+                        </LinearLayout>
+                        <ImageButton android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/grey_40" app:srcCompat="@drawable/ic_more_vert"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/spacing_large" android:paddingRight="@dimen/spacing_large" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Title" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Recommended" android:layout_weight="1"/>
+            <Button android:textColor="@color/grey_60" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="0dp" android:text="MORE" style="@style/Widget.AppCompat.Button.Borderless"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:padding="@dimen/spacing_medium" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_medium" android:layout_weight="1" app:cardCornerRadius="2dp" app:cardElevation="2dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/image_3" android:background="@color/grey_40" android:layout_width="match_parent" android:layout_height="120dp" android:scaleType="centerCrop"/>
+                    <TextView android:textAppearance="@style/TextAppearance.Medium.Bold" android:textColor="@color/grey_90" android:padding="@dimen/spacing_large" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Curabitur tempus" android:maxLines="1" android:singleLine="true"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_medium" android:layout_weight="1" app:cardCornerRadius="2dp" app:cardElevation="2dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/image_4" android:background="@color/grey_40" android:layout_width="match_parent" android:layout_height="120dp" android:scaleType="centerCrop"/>
+                    <TextView android:textAppearance="@style/TextAppearance.Medium.Bold" android:textColor="@color/grey_90" android:padding="@dimen/spacing_large" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Quisque" android:maxLines="1" android:singleLine="true"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_medium" android:layout_weight="1" app:cardCornerRadius="2dp" app:cardElevation="2dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/image_5" android:background="@color/grey_40" android:layout_width="match_parent" android:layout_height="120dp" android:scaleType="centerCrop"/>
+                    <TextView android:textAppearance="@style/TextAppearance.Medium.Bold" android:textColor="@color/grey_90" android:padding="@dimen/spacing_large" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Aliquam ac elit" android:maxLines="1" android:singleLine="true"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/spacing_large" android:paddingRight="@dimen/spacing_large" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Title" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Top Rated" android:layout_weight="1"/>
+            <Button android:textColor="@color/grey_60" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="0dp" android:text="MORE" style="@style/Widget.AppCompat.Button.Borderless"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:padding="@dimen/spacing_medium" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_large">
+            <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_medium" android:layout_weight="1" app:cardCornerRadius="2dp" app:cardElevation="2dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/image_6" android:background="@color/grey_40" android:layout_width="match_parent" android:layout_height="180dp" android:scaleType="centerCrop"/>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="@dimen/spacing_large" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                            <TextView android:textAppearance="@style/TextAppearance.Medium.Bold" android:textColor="@color/grey_90" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Suspendisse ornare" android:maxLines="1" android:singleLine="true"/>
+                            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Adipiscing"/>
+                        </LinearLayout>
+                        <ImageButton android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/grey_40" app:srcCompat="@drawable/ic_more_vert"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_medium" android:layout_weight="1" app:cardCornerRadius="2dp" app:cardElevation="2dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/image_7" android:background="@color/grey_40" android:layout_width="match_parent" android:layout_height="180dp" android:scaleType="centerCrop"/>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="@dimen/spacing_large" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                            <TextView android:textAppearance="@style/TextAppearance.Medium.Bold" android:textColor="@color/grey_90" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Placerat vel ipsum" android:maxLines="1" android:singleLine="true"/>
+                            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="amet rutrum"/>
+                        </LinearLayout>
+                        <ImageButton android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/grey_40" app:srcCompat="@drawable/ic_more_vert"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

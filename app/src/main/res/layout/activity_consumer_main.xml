@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/container" android:background="@color/grey_5" android:layout_width="match_parent" android:layout_height="match_parent">
+<!--    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">-->
+<!--        <androidx.core.widget.NestedScrollView android:id="@+id/nested_scroll_view" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:scrollingCache="true">-->
+<!--            <LinearLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">-->
+<!--                <View android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"/>-->
+<!--                <include layout="@layout/fragment_tabs_store"/>-->
+<!--                <View android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"/>-->
+<!--            </LinearLayout>-->
+<!--        </androidx.core.widget.NestedScrollView>-->
+<!--    </LinearLayout>-->
+<!--    <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:id="@+id/appbar" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">-->
+<!--        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:contentInsetStartWithNavigation="0dp" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:theme="@style/Toolbar.Light"/>-->
+<!--    </com.google.android.material.appbar.AppBarLayout>-->
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="@drawable/bg_gradient_soft" android:layout_width="match_parent" android:layout_height="4dp"/>
+        <LinearLayout android:orientation="horizontal" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="50dp">
+            <LinearLayout android:gravity="center" android:padding="@dimen/spacing_medium" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageButton android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="?attr/actionBarSize" android:layout_height="?attr/actionBarSize" android:tint="@color/teal_500" android:onClick="clickAction" app:srcCompat="@drawable/ic_apps"/>
+            </LinearLayout>
+            <View android:layout_width="?attr/actionBarSize" android:layout_height="0dp"/>
+            <LinearLayout android:gravity="center" android:padding="@dimen/spacing_medium" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageButton android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="?attr/actionBarSize" android:layout_height="?attr/actionBarSize" android:tint="@color/teal_500" android:onClick="clickAction" app:srcCompat="@drawable/ic_local_offer"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:tint="@android:color/white" android:layout_alignParentBottom="true" android:layout_centerInParent="true" android:onClick="clickAction" app:backgroundTint="@color/teal_500" app:elevation="2dp" app:fabSize="normal" app:rippleColor="@color/deep_orange_400" app:srcCompat="@drawable/ic_shopping_cart"
+        android:focusable="true" />
+</RelativeLayout>
