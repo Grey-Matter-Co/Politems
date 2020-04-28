@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="section_settings">Ajustes</string>
+    <string name="section_inventory">Inventario</string>
+    <string name="section_orders">Pedidos</string>
+    <string name="section_shop">Tienda</string>
+</resources>

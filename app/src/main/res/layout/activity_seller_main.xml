@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.ConsumerMainActivity">
+    tools:context=".activity.SellerMainActivity">
     <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
@@ -18,11 +18,11 @@
         app:itemTextColor="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:labelVisibilityMode="unlabeled"
-        app:menu="@menu/menu_consumer" />
+        app:menu="@menu/menu_seller" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabSectionMain"
-        android:contentDescription="@string/section_shop"
+        android:contentDescription="@string/section_inventory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
@@ -33,7 +33,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/ic_local_offer"
-        android:onClick="fabSelected"
         android:clickable="true" android:focusable="true"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

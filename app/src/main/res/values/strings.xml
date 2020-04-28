@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Politems</string>
+    <string name="section_settings">Settings</string>
+    <string name="section_inventory">Inventory</string>
+    <string name="section_orders">Orders</string>
+    <string name="section_shop">Shop</string>
 </resources>
